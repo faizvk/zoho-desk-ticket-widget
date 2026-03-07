@@ -1,0 +1,26 @@
+# Dependencies (installed inside Docker)
+**/node_modules
+
+# Environment files
+**/.env
+
+# Logs
+*.log
+npm-debug.log*
+
+# Git and editor
+.git
+.gitignore
+.vscode
+.idea
+.DS_Store
+
+# Frontend source (not needed — only public/ticket-widget.js is served)
+src/
+index.html
+package.json
+package-lock.json
+.npmrc
+tsconfig*.json
+vite.config.ts
+eslint.config.js

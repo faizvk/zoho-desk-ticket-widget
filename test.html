@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Zoho Widget Test</title>
+  </head>
+
+  <body>
+    <h1>Host App Simulation</h1>
+
+    <button onclick="simulateConsole()">Generate Console Log</button>
+    <button onclick="simulateError()">Generate Error</button>
+    <button onclick="simulateNetwork()">Make Network Call</button>
+
+    <script src="./dist/ticket-widget.js"></script>
+    <script>
+      // Example: point the widget at your local Zoho proxy
+      // (Zoho proxy running on http://localhost:3001)
+      window.TicketWidget && window.TicketWidget.init({
+        apiBaseUrl: "http://localhost:3001",
+        hideCustomerFields:true,
+      });
+    </script>
+  </body>
+</html>
